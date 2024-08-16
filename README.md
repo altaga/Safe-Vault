@@ -17,18 +17,18 @@ Our project has 3 fundamental components and their diagrams are as follows.
 
 ## Email Onboarding:
 
-Nuestro Email onboarding esta powered by AppKit de Wallet Connect, con este servicio es posible crear, recuperar y configurar Safe Vault Wallet completamente con el email sin necesidad de guardar ni preocuparse por el mnemonico.
+Our Email onboarding is powered by Wallet Connect's AppKit, with this service is possible to create, retrieve and configure the Safe Vault Wallet completely through email witout the need for the seed phrase.
 
 <img src="https://i.ibb.co/tYwKkLM/email-onboarding-drawio-1.png">
 
-Este servicio permite a los usuarios menos acostumbrados a las crypto wallets para poder utilizar nuestros sevricios. Toda la implementacion del provider para la wallet esta en los siguientes links. 
+This service allows users less accustomed to crypto wallets to use our services. The entire implementation of the provider for the wallet is in the following links.
 
 - [Wallet HOC CODE](./SafeVault/src/utils/walletHOC.js)
 - [Web3 Modal CODE](./SafeVault/src/App.js)
 
 ## Safe Account:
 
-El poder usar la tarjeta para pagar con crypto solo es posible gracias a [Safe](https://safe.global/wallet) y su servicio de creacion de Smart Contract Wallets, ademas de poder integrar todas sus funciones a la wallet mediante [Safe Protocol SDK](https://docs.safe.global/sdk/protocol-kit) para Javascript. Toda la implementacion de la creacion de la wallet y las transacciones de la tarjeta esta en los siguientes links.  
+Being able to use the card to pay with crypto is only possible thanks to [Safe](https://safe.global/wallet) and its Smart Contract Wallets creation service, in addition to being able to integrate all its functions into the wallet through [ Safe Protocol SDK](https://docs.safe.global/sdk/protocol-kit) for Javascript. The entire implementation of the creation of the wallet and the card transactions is in the following links.
 
 - [Safe Creation CODE](./SafeVault/src/utils/transactionsModal.js)
 - [Safe Account Card CODE](./SafeVault/src/screens/main/tabs/tab3.js)
@@ -36,7 +36,7 @@ El poder usar la tarjeta para pagar con crypto solo es posible gracias a [Safe](
 
 <img src="https://i.ibb.co/mT24HFz/safe-wallet-drawio.png">
 
-Todas las transacciones mostradas en los demos son de esta wallet.
+All transactions shown in the demos are from this wallet.
 
 [Wallet Safe URL](https://app.safe.global/home?safe=base:0x25a990f1d53bA262d277c31d22f187384dD336E3)
 
@@ -67,13 +67,13 @@ In turn, this tab integrates the contract of [Batch Balances](./SafeVault/src/co
 
 ## Send:
 
-With the send function, we can send native tokens or ERC20 tokens. Como cualquier wallet primero veremos una review de la transaccion que vayamos a hacer y finalmente la ejecutaremos si todo es correcto. 
+With the send function, we can send native tokens or ERC20 tokens. Like any wallet, we will first see a review of the transaction we are going to make and finally we will execute it if everything is correct.
 
 - [CODE](./SafeVault/src/screens/sendWallet/sendWallet.js)
 
 <img src="https://i.ibb.co/CKccXtd/vlcsnap-2024-08-15-22h54m44s819.png" width="32%"> <img src="https://i.ibb.co/7ysBzwH/vlcsnap-2024-08-15-22h54m48s332.png" width="32%"> <img src="https://i.ibb.co/27hyxFX/vlcsnap-2024-08-15-22h55m27s600.png" width="32%">
 
-Todas las transacciones son ejecutadas en el siguiente componente. 
+All transactions are executed in the following component.
 
 - [CODE](./SafeVault/src/utils/transactionsModal.js)
 
