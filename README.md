@@ -87,7 +87,9 @@ With this screen, you can easily show your Wallet to receive funds, whether nati
 
 ## Payment: 
 
-In this tab we intend to make it the same as using a traditional POS, this allows us to enter the amount to be charged in American dollars and to be able to make the payment with one of our virtual cards. [CODE](./SafeVault/src/screens/paymentWallet/paymentWallet.js)
+In this tab we intend to make it the same as using a traditional POS, this allows us to enter the amount to be charged in American dollars and to be able to make the payment with one of our virtual cards. 
+
+- [CODE](./SafeVault/src/screens/paymentWallet/paymentWallet.js)
 
 <img src="https://i.ibb.co/qMh6hDC/Screenshot-20240816-000140.png" width="32%"> <img src="https://i.ibb.co/7zxW2Nm/Screenshot-20240816-000201.png" width="32%"> <img src="https://i.ibb.co/x5MSBTv/Screenshot-20240816-000150.png" width="32%">
 
@@ -99,13 +101,17 @@ Finally, if our device has the option to print the purchase receipt, it can be p
 
 ## Savings:
 
-In the savings section, we can create our savings account, this account is linked to our main wallet account, meaning that our wallet will be the owner of it. [CODE](./SafeVault/src/screens/main/tabs/tab2.js)
+In the savings section, we can create our savings account, this account is linked to our main wallet account, meaning that our wallet will be the owner of it. 
+
+- [CODE](./SafeVault/src/screens/main/tabs/tab2.js)
 
 <img src="https://i.ibb.co/S3w3b3f/vlcsnap-2024-08-15-23h05m12s788.png" width="32%"> <img src="https://i.ibb.co/dKZpYB0/vlcsnap-2024-08-15-23h05m01s157.png" width="32%"> <img src="https://i.ibb.co/55jLcds/vlcsnap-2024-08-15-23h05m04s545.png" width="32%">
 
 ### Savings Protocol:
 
-- Balanced Protocol, this protocol performs a weighted rounding according to the amount to be paid in the transaction, so that the larger the transaction, the greater the savings, in order not to affect the user. [CODE](./SafeVault/src/utils/utils.js)
+- Balanced Protocol, this protocol performs a weighted rounding according to the amount to be paid in the transaction, so that the larger the transaction, the greater the savings, in order not to affect the user. 
+
+- [CODE](./SafeVault/src/utils/utils.js)
 
         export function balancedSavingToken(number, usd1, usd2) {
             const balance = number * usd1;
@@ -134,7 +140,9 @@ In the savings section, we can create our savings account, this account is linke
             return new Decimal(amount).sub(new Decimal(balance)).div(usd2).toNumber();
         }
 
-- Percentage protocol, unlike the previous protocol, this one aims to always save a percentage selected in the UI. [CODE](./SafeVault/src/utils/utils.js)
+- Percentage protocol, unlike the previous protocol, this one aims to always save a percentage selected in the UI. 
+
+- [CODE](./SafeVault/src/utils/utils.js)
 
         export function percentageSaving(number, percentage) {
             return number * (percentage / 100);
