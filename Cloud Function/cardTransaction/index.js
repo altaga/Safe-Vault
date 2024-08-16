@@ -11,7 +11,7 @@ const provider = ""; // Your Provider
 const signer = ""; // Your Signer
 
 const db = new Firestore({
-  projectId: "safe-vault-432423",
+  projectId: "", // Your Project Id
   keyFilename: "credential.json",
 });
 
