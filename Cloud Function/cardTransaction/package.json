@@ -1,0 +1,9 @@
+{
+  "dependencies": {
+    "@google-cloud/functions-framework": "^3.0.0",
+    "@google-cloud/firestore": "^7.6.0",
+    "ethers":"^5.7.2",
+    "@safe-global/protocol-kit": "^4.0.4",
+    "@safe-global/safe-core-sdk-types": "^5.0.3"
+  }
+}
