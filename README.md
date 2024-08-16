@@ -9,7 +9,7 @@ WALLET CODE: [CODE](./SafeVault/)
 
 APK APP: [LINK](./SafeVault%20APK/app-release.apk)
 
-VIDEODEMO: [VIDEO](Pending...)
+VIDEODEMO: [VIDEO](https://youtu.be/pBJ31oYsnFE)
 
 # System Diagrams:
 
