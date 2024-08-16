@@ -7,7 +7,7 @@
 
 WALLET CODE: [CODE](./SafeVault/)
 
-PLAYSTORE: [LINK](https://play.google.com/store/apps/details?id=com.altaga.safevault)
+APK APP: [LINK](./SafeVault%20APK/app-release.apk)
 
 VIDEODEMO: [VIDEO](Pending...)
 
