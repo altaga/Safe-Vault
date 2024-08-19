@@ -26,6 +26,24 @@ This service allows users less accustomed to crypto wallets to use our services.
 - [Wallet HOC CODE](./SafeVault/src/utils/walletHOC.js)
 - [Web3 Modal CODE](./SafeVault/src/App.js)
 
+Hack to integrate the Base network with an Email Provider in React Native.
+
+On this node_modules file @web3modal/email-react-native/src/W3mFrameProvider.ts
+
+Change this lines or use the patch in the [patches folder](./Patches/@web3modal+email-react-native+2.0.1.patch):
+
+- Line 313:
+
+        const chainId = 8453;
+
+- Line 349:
+
+        return 8453
+
+- Line 438:
+
+        this.setLastUsedChainId(8453);
+
 ## Safe Account:
 
 Being able to use the card to pay with crypto is only possible thanks to [Safe](https://safe.global/wallet) and its Smart Contract Wallets creation service, in addition to being able to integrate all its functions into the wallet through [ Safe Protocol SDK](https://docs.safe.global/sdk/protocol-kit) for Javascript. The entire implementation of the creation of the wallet and the card transactions is in the following links.

@@ -1,0 +1,31 @@
+diff --git a/node_modules/@web3modal/email-react-native/src/W3mFrameProvider.ts b/node_modules/@web3modal/email-react-native/src/W3mFrameProvider.ts
+index bf0e7dd..54b70d6 100644
+--- a/node_modules/@web3modal/email-react-native/src/W3mFrameProvider.ts
++++ b/node_modules/@web3modal/email-react-native/src/W3mFrameProvider.ts
+@@ -313,7 +313,7 @@ export class W3mFrameProvider {
+   // -- Provider Methods ------------------------------------------------
+   public async connect(payload?: W3mFrameTypes.Requests['AppGetUserRequest']) {
+     const lastUsedChain = await this.getLastUsedChainId();
+-    const chainId = payload?.chainId ?? lastUsedChain ?? 1;
++    const chainId = 8453;
+     await this.webviewLoadPromise;
+ 
+     this.postAppEvent({
+@@ -349,7 +349,7 @@ export class W3mFrameProvider {
+ 
+   public async request(req: W3mFrameTypes.RPCRequest) {
+     if (W3mFrameRpcConstants.GET_CHAIN_ID === req.method) {
+-      return await this.getLastUsedChainId();
++      return 8453
+     }
+     await this.webviewLoadPromise;
+     this.postAppEvent({
+@@ -438,7 +438,7 @@ export class W3mFrameProvider {
+     event: Extract<W3mFrameTypes.FrameEvent, { type: '@w3m-frame/GET_USER_SUCCESS' }>
+   ) {
+     this.setEmailLoginSuccess(event.payload.email);
+-    this.setLastUsedChainId(event.payload.chainId);
++    this.setLastUsedChainId(8453);
+     this.connectResolver?.resolve(event.payload);
+   }
+ 
