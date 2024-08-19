@@ -38,7 +38,7 @@ Being able to use the card to pay with crypto is only possible thanks to [Safe](
 
 All transactions shown in the demos are from this wallet.
 
-[Wallet Safe URL](https://app.safe.global/home?safe=base:0x25a990f1d53bA262d277c31d22f187384dD336E3)
+[Wallet Safe URL](https://app.safe.global/transactions/history?safe=base:0x25a990f1d53bA262d277c31d22f187384dD336E3)
 
 # Screens:
 
